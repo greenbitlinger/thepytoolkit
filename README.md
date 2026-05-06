@@ -1,12 +1,4 @@
-\# THEPYTOOLKIT
-
-
-
-
-
-\*ITS VERY USEFUL
-
-
+THEPYTOOLKIT
 
 1. Able to be used by beginners
 2. Easy
@@ -14,7 +6,7 @@
 
 
 
-\## RUNDOWN
+RUNDOWN
 
 ANSI, ALLOWS FOR COLOURED TEXT WITH THE `specialprint()` FUNCTION
 
@@ -37,5 +29,5 @@ print(code) # CAN USE 2
 
 
 
-\## FUTURE UPDATES MAY HAPPEN
+FUTURE UPDATES MAY HAPPEN
 
