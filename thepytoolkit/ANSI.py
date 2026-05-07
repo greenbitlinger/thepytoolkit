@@ -236,21 +236,21 @@ UNDERLINE_RGB_PINK = '\033[4;38;2;255;192;203m'
 BOLD_ITALIC_RGB_RED = '\033[1;3;38;2;255;0;0m'
 BOLD_UNDERLINE_RGB_GREEN = '\033[1;4;38;2;0;255;0m'
 
-def specialprint(text, colourStart=None, effects=None):
+def specialprint(text, code=None, code1=None, RESET = '\033[0m'):
 
     try:
         str(text)
     except Exception as e:
         print("[!] {}".format(e))
 
-    if effects is None and colourStart is None:
+    if code is None and code1 is None:
         print(text)
-    elif effects is None:
-        print(f"{colourStart}{text}{RESET}")
-    elif colourStart is None:
-        print(f"{effects}{text}{RESET}")
+    elif code is None:
+        print(f"{code1}{text}{RESET}")
+    elif code1 is None:
+        print(f"{code}{text}{RESET}")
     else:
-        print(f"{colourStart}{effects}{text}{RESET}")
+        print(f"{code}{code1}{text}{RESET}")
 
 if __name__ == "__main__":
     pass
